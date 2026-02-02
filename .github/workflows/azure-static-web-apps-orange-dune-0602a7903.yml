@@ -3,11 +3,11 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches:
-      - feature/connect-frontend-to-api
+      - main
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
-      - feature/connect-frontend-to-api
+      - main
 
 jobs:
   build_and_deploy_job:
@@ -47,3 +47,4 @@ jobs:
           app_location: "/"
           api_location: ""
           output_location: "dist"
+
